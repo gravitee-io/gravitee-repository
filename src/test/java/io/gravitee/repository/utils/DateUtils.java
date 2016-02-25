@@ -13,14 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.gravitee.repository.management.model;
+package io.gravitee.repository.utils;
 
-/**
- * Api lifecycle states
- * 
- * @author David BRASSELY (brasseld at gmail.com)
- */
-public enum LifecycleState {
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-    STARTED, STOPPED
+public class DateUtils {
+
+    public static Date parse(final String stringDate) {
+        try {
+            return new SimpleDateFormat("dd/MM/yyyy").parse(stringDate);
+        } catch (final ParseException pe) {
+            throw new RuntimeException(pe);
+        }
+    }
 }

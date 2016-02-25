@@ -13,14 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.gravitee.repository.management.model;
+package io.gravitee.repository.config;
 
-/**
- * Api lifecycle states
- * 
- * @author David BRASSELY (brasseld at gmail.com)
- */
-public enum LifecycleState {
+public interface TestRepositoryInitializer {
 
-    STARTED, STOPPED
+    void setUp();
+
+    void tearDown();
 }
