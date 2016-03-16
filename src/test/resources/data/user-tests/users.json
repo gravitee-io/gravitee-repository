@@ -1,0 +1,26 @@
+[
+   {
+      "username":"user0",
+      "email":"user0@gravitee.io"
+   },
+   {
+      "username":"user1",
+      "email":"user1@gravitee.io"
+   },
+   {
+      "username":"user2",
+      "email":"user2@gravitee.io"
+   },
+   {
+      "username":"user3",
+      "email":"user3@gravitee.io"
+   },
+   {
+      "username":"user4",
+      "email":"user4@gravitee.io"
+   },
+   {
+      "username":"user5",
+      "email":"user5@gravitee.io"
+   }
+]

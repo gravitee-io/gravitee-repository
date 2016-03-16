@@ -1,0 +1,22 @@
+[
+   {
+      "username":"user-b6e1b84c-3c0b-4217-b13a-914a801f901c",
+      "email":"user-b6e1b84c-3c0b-4217-b13a-914a801f901c@gravitee.io"
+   },
+   {
+      "username":"findByUser",
+      "email":"findByUser@gravitee.io"
+   },
+   {
+      "username":"findByTeam",
+      "email":"findByTeam@gravitee.io"
+   },
+   {
+      "username":"creator",
+      "email":"creator@gravitee.io"
+   },
+   {
+      "username":"updater",
+      "email":"updater@gravitee.io"
+   }
+]
