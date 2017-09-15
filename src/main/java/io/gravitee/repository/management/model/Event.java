@@ -118,7 +118,9 @@ public class Event {
     public enum EventProperties {
         API_ID("api_id"),
         ORIGIN("origin"),
-        USERNAME("username");
+        USERNAME("username"),
+        FIRSTNAME("firstname"),
+        LASTNAME("lastname");
 
         private String value;
 
