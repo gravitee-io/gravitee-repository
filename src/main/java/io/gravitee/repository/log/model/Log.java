@@ -51,6 +51,9 @@ public class Log {
     private String securityType;
     private String securityToken;
     private String errorKey;
+    private String sslLocalPrincipal;
+    private String sslPeerPrincipal;
+    private String sslProtocol;
 
     public String getId() {
         return id;
@@ -242,6 +245,30 @@ public class Log {
 
     public void setErrorKey(String errorKey) {
         this.errorKey = errorKey;
+    }
+
+    public String getSslLocalPrincipal() {
+        return sslLocalPrincipal;
+    }
+
+    public void setSslLocalPrincipal(String sslLocalPrincipal) {
+        this.sslLocalPrincipal = sslLocalPrincipal;
+    }
+
+    public String getSslPeerPrincipal() {
+        return sslPeerPrincipal;
+    }
+
+    public void setSslPeerPrincipal(String sslPeerPrincipal) {
+        this.sslPeerPrincipal = sslPeerPrincipal;
+    }
+
+    public String getSslProtocol() {
+        return sslProtocol;
+    }
+
+    public void setSslProtocol(String sslProtocol) {
+        this.sslProtocol = sslProtocol;
     }
 
     @Override
