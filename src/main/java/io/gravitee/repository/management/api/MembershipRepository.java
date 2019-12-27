@@ -33,6 +33,14 @@ public interface MembershipRepository {
     void delete(Membership membership) throws TechnicalException;
 
     /**
+     * delete all members of a reference
+     * @param referenceType
+     * @param referenceId
+     * @throws TechnicalException
+     */
+    void deleteMembers(MembershipReferenceType referenceType, String referenceId) throws TechnicalException;
+
+    /**
      * find membership by id.
      * the MembershipId is a combination of username, reference type and referenceId
      * => a user has only one membership for a given reference
