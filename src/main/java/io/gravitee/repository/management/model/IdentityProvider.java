@@ -89,6 +89,11 @@ public class IdentityProvider {
      */
     private Date updatedAt;
 
+    /**
+     * Order of the identity provider
+     */
+    private int order;
+
     public String getOrganizationId() {
         return organizationId;
     }
@@ -199,6 +204,14 @@ public class IdentityProvider {
 
     public void setSyncMappings(Boolean syncMappings) {
         this.syncMappings = syncMappings;
+	}
+
+    public int getOrder() {
+        return order;
+    }
+
+    public void setOrder(int order) {
+        this.order = order;
     }
 
     @Override

@@ -44,4 +44,5 @@ public interface IdentityProviderRepository {
 
     Optional<IdentityProvider> findById(String key) throws TechnicalException;
 
+    Integer findMaxIdentityProviderOrganizationIdOrder(String organizationId) throws TechnicalException;
 }
