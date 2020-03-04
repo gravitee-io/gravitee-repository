@@ -30,6 +30,7 @@ public class View {
     public static final String ALL_ID = "all";
 
     private String id;
+    private String key;
     private String name;
     private String description;
     private boolean defaultView;
@@ -46,6 +47,14 @@ public class View {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 
     public String getName() {
@@ -126,19 +135,21 @@ public class View {
         if (!(o instanceof View)) return false;
         View view = (View) o;
         return Objects.equals(id, view.id) &&
+                Objects.equals(key, view.key) &&
                 Objects.equals(name, view.name) &&
                 Objects.equals(description, view.description);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, description);
+        return Objects.hash(id, key, name, description);
     }
 
     @Override
     public String toString() {
         return "View{" +
                 "id='" + id + '\'' +
+                ", key='" + key + '\'' +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", defaultView='" + defaultView + '\'' +
