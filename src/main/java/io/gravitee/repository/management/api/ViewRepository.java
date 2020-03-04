@@ -18,6 +18,7 @@ package io.gravitee.repository.management.api;
 import io.gravitee.repository.exceptions.TechnicalException;
 import io.gravitee.repository.management.model.View;
 
+import java.util.Optional;
 import java.util.Set;
 
 /**
@@ -28,4 +29,5 @@ import java.util.Set;
 public interface ViewRepository extends CrudRepository<View, String>{
 
     Set<View> findAll() throws TechnicalException;
+    Optional<View> findByKey(String key) throws TechnicalException;
 }
