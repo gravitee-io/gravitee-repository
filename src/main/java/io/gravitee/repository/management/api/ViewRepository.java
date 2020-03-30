@@ -38,6 +38,8 @@ public interface ViewRepository{
     void delete(String id, String environment) throws TechnicalException;
     
     Set<View> findAll() throws TechnicalException;
+
+    Optional<View> findByKey(String key, String environment) throws TechnicalException;
     
     Set<View> findAllByEnvironment(String environment) throws TechnicalException;
 }
