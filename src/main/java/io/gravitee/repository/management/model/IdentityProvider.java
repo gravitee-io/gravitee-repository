@@ -72,6 +72,8 @@ public class IdentityProvider {
 
     private Boolean emailRequired;
 
+    private Boolean syncMappings;
+
     /**
      * Identity provider creation date
      */
@@ -176,6 +178,14 @@ public class IdentityProvider {
 
     public void setEmailRequired(Boolean emailRequired) {
         this.emailRequired = emailRequired;
+    }
+
+    public Boolean getSyncMappings() {
+        return syncMappings;
+    }
+
+    public void setSyncMappings(Boolean syncMappings) {
+        this.syncMappings = syncMappings;
     }
 
     @Override
