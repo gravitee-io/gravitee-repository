@@ -33,7 +33,7 @@
     <name>Gravitee.io APIM - Repository - API</name>
 
     <properties>
-        <gravitee-common.version>1.16.2</gravitee-common.version>
+        <gravitee-common.version>1.17.0</gravitee-common.version>
     </properties>
 
     <dependencies>
