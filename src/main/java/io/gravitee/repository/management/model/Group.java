@@ -40,6 +40,7 @@ public class Group {
     private boolean lockApplicationRole;
     private boolean systemInvitation;
     private boolean emailInvitation;
+    private boolean disableMembershipNotifications;
 
     public String getId() {
         return id;
@@ -127,5 +128,13 @@ public class Group {
 
     public void setEmailInvitation(boolean emailInvitation) {
         this.emailInvitation = emailInvitation;
+    }
+
+    public boolean isDisableMembershipNotifications() {
+        return disableMembershipNotifications;
+    }
+
+    public void setDisableMembershipNotifications(boolean disableMembershipNotifications) {
+        this.disableMembershipNotifications = disableMembershipNotifications;
     }
 }
