@@ -98,9 +98,14 @@ public class Api {
      */
     private List<String> labels;
 
+    /**
+     */
+    private boolean disableMembershipNotifications;
+
     private ApiLifecycleState apiLifecycleState = ApiLifecycleState.CREATED;
 
-    public Api(){}
+    public Api() {
+    }
 
     public Api(Api cloned) {
         this.id = cloned.id;
@@ -118,6 +123,7 @@ public class Api {
         this.views = cloned.views;
         this.labels = cloned.labels;
         this.apiLifecycleState = cloned.apiLifecycleState;
+        this.disableMembershipNotifications = cloned.disableMembershipNotifications;
     }
 
     public Date getCreatedAt() {
@@ -240,6 +246,14 @@ public class Api {
         this.apiLifecycleState = apiLifecycleState;
     }
 
+    public boolean isDisableMembershipNotifications() {
+        return disableMembershipNotifications;
+    }
+
+    public void setDisableMembershipNotifications(boolean disableMembershipNotifications) {
+        this.disableMembershipNotifications = disableMembershipNotifications;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -255,16 +269,17 @@ public class Api {
 
     public String toString() {
         return "Api{" +
-            "id='" + id + '\'' +
-            ", name='" + name + '\'' +
-            ", description='" + description + '\'' +
-            ", version='" + version + '\'' +
-            ", definition='" + definition + '\'' +
-            ", createdAt=" + createdAt +
-            ", updatedAt=" + updatedAt +
-            ", visibility=" + visibility +
-            ", lifecycleState=" + lifecycleState +
-            ", apiLifecycleState=" + apiLifecycleState +
-            '}';
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", version='" + version + '\'' +
+                ", definition='" + definition + '\'' +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                ", visibility=" + visibility +
+                ", lifecycleState=" + lifecycleState +
+                ", apiLifecycleState=" + apiLifecycleState +
+                ", disableMembershipNotifications=" + disableMembershipNotifications +
+                '}';
     }
 }
