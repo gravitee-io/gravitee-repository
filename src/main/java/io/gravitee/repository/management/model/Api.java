@@ -60,6 +60,11 @@ public class Api {
     private String definition;
 
     /**
+     * The api JSON definition version
+     */
+    private Integer definitionVersion;
+
+    /**
      * The api deployment date
      */
     private Date deployedAt;
@@ -132,6 +137,7 @@ public class Api {
         this.labels = cloned.labels;
         this.apiLifecycleState = cloned.apiLifecycleState;
         this.disableMembershipNotifications = cloned.disableMembershipNotifications;
+        this.definitionVersion = cloned.definitionVersion;
     }
 
     public Date getCreatedAt() {
@@ -278,6 +284,14 @@ public class Api {
         this.disableMembershipNotifications = disableMembershipNotifications;
     }
 
+    public void setDefinitionVersion(Integer definitionVersion) {
+        this.definitionVersion = definitionVersion;
+    }
+
+    public Integer getDefinitionVersion() {
+        return definitionVersion;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -304,7 +318,8 @@ public class Api {
             ", visibility=" + visibility +
             ", lifecycleState=" + lifecycleState +
             ", apiLifecycleState=" + apiLifecycleState +
-                ", disableMembershipNotifications=" + disableMembershipNotifications +
+            ", disableMembershipNotifications=" + disableMembershipNotifications +
+            ", definitionVersion=" + apiLifecycleState +
             '}';
     }
 }
